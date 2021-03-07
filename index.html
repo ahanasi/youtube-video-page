@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube Video Page</title>
     <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
   </head>
   <body>
     <header>
@@ -73,14 +75,14 @@
           <li class="nav-link">
             <svg viewBox="0 0 24 24" class="nav-icon">
               <path
-                d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
+                d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"
               ></path>
             </svg>
           </li>
           <li class="nav-link">
             <svg viewBox="0 0 24 24" class="nav-icon">
               <path
-                d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"
+                d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
               ></path>
             </svg>
           </li>
@@ -103,17 +105,51 @@
     </header>
     <main class="main-container">
       <section class="video-container">
-        <video src=""></video>
+        <iframe
+          width="966"
+          height="604"
+          src="https://www.youtube.com/embed/V74l_zS1x8E"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="video-info">
+          <h1 class="video-title">Contributing to Open Source Part I: The Easy Way</h1>
+          <div class="video-menu">
+            <span class="video-menu-text">62,305 views • Feb 27, 2014</span>
+            <div class="video-btns">
+              <div class="btn-wrapper">
+                <svg viewBox="0 0 24 24" class="menu-btn"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></svg>
+                <span class="video-menu-text">459</span>
+              </div>
+              <div class="btn-wrapper">  
+                <svg viewBox="0 0 24 24" class="menu-btn"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></svg>
+                <span class="video-menu-text">19</span>
+              </div>
+              <div class="btn-wrapper">
+                <svg viewBox="0 0 24 24" class="menu-btn"><path d="M14 9V3L22 12L14 21V15C8.44 15 4.78 17.03 2 21C3.11 15.33 6.22 10.13 14 9Z"></path></svg>
+                <span class="video-menu-text">SHARE</span>
+              </div>
+              <div class="btn-wrapper">
+                <svg viewBox="0 0 24 24" class="menu-btn"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path></svg>
+                <span class="video-menu-text">SAVE</span>
+              </div>
+              <div>
+                <svg viewBox="0 0 24 24" class="menu-btn"><circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2"></circle></svg>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="video-description">
-          How do you contribute to open source? In this video, I'll describe the
-          easiest way to make a simple contribution to an open source project --
-          without using the command line, a text editor, "forking a repo", or
-          even touching Git outside of Github. I'll also describe what kinds of
-          contributions open source software projects are typically looking for.
-          As an example, I use submitting a student solution to a web
-          development exercise from The Odin Project, a free online curriculum
-          for learning web development with Ruby on Rails. You can find more
-          information about that project at http://theodinproject.com​.
+          <p>How do you contribute to open source? In this video, I'll describe the
+            easiest way to make a simple contribution to an open source project --
+            without using the command line, a text editor, "forking a repo", or
+            even touching Git outside of Github. I'll also describe what kinds of
+            contributions open source software projects are typically looking for.
+            As an example, I use submitting a student solution to a web
+            development exercise from The Odin Project, a free online curriculum
+            for learning web development with Ruby on Rails. You can find more
+            information about that project at http://theodinproject.com​.</p>
         </div>
         <div class="comments"></div>
       </section>
