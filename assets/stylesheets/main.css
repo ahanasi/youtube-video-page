@@ -155,7 +155,7 @@ h4,
 h5,
 p {
   margin-bottom: 4px;
-  font-family: 'Roboto', sans-serif;  
+  font-family: "Roboto", sans-serif;
 }
 
 /*
@@ -163,6 +163,12 @@ p {
   Custom styles
   ========================================
 */
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+}
 
 .navbar {
   padding: 8px 16px 8px 16px;
@@ -276,7 +282,6 @@ button > .nav-icon {
 .main-container {
   display: flex;
   justify-content: center;
-  background-color: lightblue;
   height: 100vh;
   padding: 0;
 }
@@ -286,23 +291,24 @@ button > .nav-icon {
   width: 990px;
 }
 
-.video-info{
+.video-info {
   padding: 20px 0 8px;
+  border-bottom: 1px solid #0000001a;
 }
 
 .video-title {
   font-size: 18px;
 }
 
-.video-menu-text{
+.video-menu-text {
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;  
+  font-family: "Roboto", sans-serif;
   color: #606060;
   display: inline-block;
   vertical-align: middle;
 }
 
-.video-menu{
+.video-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -323,9 +329,48 @@ button > .nav-icon {
 
 .menu-btn {
   height: 24px;
-  color: rgb(144, 144, 144);
-  opacity: 0.6;
-  margin: 6px; 
+  color: #8f8f8f;
+  opacity: 0.4;
+  margin: 6px;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.channel-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 0 12px 12px 2px;
+}
+
+.channel-name {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.subs {
+  font-size: 13px;
+  color: #606060;
+}
+
+.sub-button {
+  background-color: #c00;
+  border-radius: 2px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 2px 10px 2px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+  width: 106px;
 }
 
 aside {
