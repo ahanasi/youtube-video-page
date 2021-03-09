@@ -279,8 +279,13 @@ button > .nav-icon {
   margin: 0 8px 3px 8px;
 }
 
-.main-container {
+.flex-container {
   display: flex;
+  align-items: center;
+}
+
+.main-container {
+  align-items: flex-start;
   justify-content: center;
   height: 100vh;
   padding: 0;
@@ -291,8 +296,11 @@ button > .nav-icon {
   width: 990px;
 }
 
-.video-info {
-  padding: 20px 0 8px;
+section > iframe {
+  margin-bottom: 20px;
+}
+
+.video-info-container {
   border-bottom: 1px solid #0000001a;
 }
 
@@ -309,20 +317,14 @@ button > .nav-icon {
 }
 
 .video-menu {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .video-btns {
-  display: flex;
-  align-items: center;
   font-weight: bold;
 }
 
 .btn-wrapper {
-  display: flex;
-  align-items: center;
   margin-right: 12px;
   cursor: pointer;
 }
@@ -335,16 +337,15 @@ button > .nav-icon {
 }
 
 .channel-info {
-  display: flex;
-  align-items: center;
-  padding-top: 16px;
+  padding: 9px 0 7px;
+  margin-left: 2px;
 }
 
 .channel-image {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  margin: 0 12px 12px 2px;
+  margin: 5px 18px 12px 0;
 }
 
 .channel-name {
@@ -371,6 +372,46 @@ button > .nav-icon {
   margin-left: auto;
   cursor: pointer;
   width: 106px;
+}
+
+.video-description {
+  font-size: 14px;
+  margin-left: 64px;
+  line-height: 21px;
+  max-width: 615px;
+}
+
+.expand-desc {
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px 0 12px;
+}
+
+.comments-container {
+  margin-top: 24px;
+}
+
+.comments-header {
+  margin-bottom: 24px;
+}
+
+.comments-header > .btn-wrapper{
+  margin: 0 0 3px 32px;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.new-comment{
+  margin-bottom: 24px;
+}
+
+.comment-input {
+  line-height: 21px;
+  margin: 0 0 4px 16px;
+  width: 100%;
 }
 
 aside {

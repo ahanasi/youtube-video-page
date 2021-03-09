@@ -7,7 +7,10 @@
     <title>Youtube Video Page</title>
     <link rel="stylesheet" href="assets/stylesheets/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    />
   </head>
   <body>
     <header>
@@ -103,7 +106,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container">
+    <main class="main-container flex-container">
       <section class="video-container">
         <iframe
           width="966"
@@ -113,35 +116,69 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <div class="video-info">
-          <h1 class="video-title">Contributing to Open Source Part I: The Easy Way</h1>
-          <div class="video-menu">
+        <div class="video-info-container">
+          <h1 class="video-title">
+            Contributing to Open Source Part I: The Easy Way
+          </h1>
+          <div class="video-menu flex-container">
             <span class="video-menu-text">62,305 views • Feb 27, 2014</span>
-            <div class="video-btns">
-              <div class="btn-wrapper">
-                <svg viewBox="0 0 24 24" class="menu-btn"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></svg>
+            <div class="video-btns flex-container">
+              <div class="btn-wrapper flex-container">
+                <svg viewBox="0 0 24 24" class="menu-btn">
+                  <path
+                    d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                    class="style-scope yt-icon"
+                  ></path>
+                </svg>
                 <span class="video-menu-text">459</span>
               </div>
-              <div class="btn-wrapper">  
-                <svg viewBox="0 0 24 24" class="menu-btn"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></svg>
+              <div class="btn-wrapper flex-container">
+                <svg viewBox="0 0 24 24" class="menu-btn">
+                  <path
+                    d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                    class="style-scope yt-icon"
+                  ></path>
+                </svg>
                 <span class="video-menu-text">19</span>
               </div>
-              <div class="btn-wrapper">
-                <svg viewBox="0 0 24 24" class="menu-btn"><path d="M14 9V3L22 12L14 21V15C8.44 15 4.78 17.03 2 21C3.11 15.33 6.22 10.13 14 9Z"></path></svg>
+              <div class="btn-wrapper flex-container">
+                <svg viewBox="0 0 24 24" class="menu-btn">
+                  <path
+                    d="M14 9V3L22 12L14 21V15C8.44 15 4.78 17.03 2 21C3.11 15.33 6.22 10.13 14 9Z"
+                  ></path>
+                </svg>
                 <span class="video-menu-text">SHARE</span>
               </div>
-              <div class="btn-wrapper">
-                <svg viewBox="0 0 24 24" class="menu-btn"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path></svg>
+              <div class="btn-wrapper flex-container">
+                <svg viewBox="0 0 24 24" class="menu-btn">
+                  <path
+                    d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"
+                  ></path>
+                </svg>
                 <span class="video-menu-text">SAVE</span>
               </div>
               <div>
-                <svg viewBox="0 0 24 24" class="menu-btn"><circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2"></circle></svg>
+                <svg viewBox="0 0 24 24" class="menu-btn">
+                  <circle
+                    cx="5"
+                    cy="12"
+                    r="2"
+                    class="style-scope yt-icon"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="2"
+                    class="style-scope yt-icon"
+                  ></circle>
+                  <circle cx="19" cy="12" r="2"></circle>
+                </svg>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-description">
-          <div class="channel-info">
+        <div class="video-info-container">
+          <div class="channel-info flex-container">
             <img
               class="channel-image"
               alt="Channel Profile Image"
@@ -151,21 +188,44 @@
               <h5 class="channel-name">The Odin Project</h5>
               <p class="subs">1.05K subscribers</p>
             </div>
-            <button class="sub-button">
-              SUBSCRIBE
-            </button>
+            <button class="sub-button">SUBSCRIBE</button>
           </div>
-          <p>How do you contribute to open source? In this video, I'll describe the
-            easiest way to make a simple contribution to an open source project --
-            without using the command line, a text editor, "forking a repo", or
-            even touching Git outside of Github. I'll also describe what kinds of
-            contributions open source software projects are typically looking for.
-            As an example, I use submitting a student solution to a web
-            development exercise from The Odin Project, a free online curriculum
-            for learning web development with Ruby on Rails. You can find more
-            information about that project at http://theodinproject.com​.</p>
+          <div class="video-description">
+            <p>
+              How do you contribute to open source? In this video, I'll describe
+              the easiest way to make a simple contribution to an open source
+              project -- without using the command line, a text editor, "forking
+              a repo", or even touching Git outside of Github. I'll also
+              describe what kinds of contributions open
+              <span class="expand-desc subs">SHOW MORE</span>
+            </p>
+          </div>
         </div>
-        <div class="comments"></div>
+        <div class="comments-container">
+          <header class="comments-header flex-container">
+            <h4 class="">17 Comments</h4>
+            <div class="btn-wrapper flex-container">
+              <svg viewBox="0 0 24 24" class="menu-btn">
+                <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+              </svg>
+              <span class="video-menu-text">SAVE</span>
+            </div>
+          </header>
+          <div class="new-comment flex-container">
+            <img
+              class="profile-img"
+              id="img"
+              alt="Default profile photo"
+              height="40"
+              width="40"
+              src="https://yt3.ggpht.com/a/default-user=s88-c-k-c0x00ffffff-no-rj"
+            />
+            <div class="comment-input video-menu-text video-info-container">
+              <p>Add a public comment...</p>
+            </div>
+          </div>
+        </div>
       </section>
       <aside class="recommendations">
         <div>
