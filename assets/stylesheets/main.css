@@ -402,16 +402,59 @@ section > iframe {
 
 .profile-img {
   border-radius: 50%;
+  align-self: baseline;
 }
 
-.new-comment{
+.new-comment, .old-comment{
   margin-bottom: 24px;
+}
+
+.comment-content-wrapper {
+  margin-left: 16px;
+  max-width: 870px;
 }
 
 .comment-input {
   line-height: 21px;
-  margin: 0 0 4px 16px;
+  margin: 0 0 2px;
   width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.comment-input.video-menu-text {
+  margin-left: 16px;
+}
+
+.comment-body {
+  line-height: 20px;
+  width: 100%;  
+  font-size: 14px;
+}
+
+.comment-actions {
+  margin-top: 8px;
+}
+
+
+.comment-btn {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  color: #606060;
+  opacity: 0.4;
+  margin-right: 8px;
+}
+
+.comment-btn:hover{
+  opacity: 0.6;
+}
+
+.vote-count {
+  font-size: 13px;
+  margin-right: 8px;
+  font-weight: 500;
 }
 
 aside {
