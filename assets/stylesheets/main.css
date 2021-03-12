@@ -286,6 +286,7 @@ button > .nav-icon {
 
 .main-container {
   align-items: flex-start;
+  background-color: #f9f9f9;
   justify-content: center;
   height: 100vh;
   padding: 0;
@@ -357,6 +358,9 @@ section > iframe {
 .subs {
   font-size: 13px;
   color: #606060;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sub-button {
@@ -459,6 +463,29 @@ section > iframe {
 
 aside {
   float: right;
-  background-color: lightgray;
   width: 402px;
+  padding-top: 24px;
+}
+
+.rec-wrapper {
+  margin-bottom: 8px;
+}
+
+.rec-image {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.rec-info-wrapper {
+  align-self: baseline;
+  line-height: 15px;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.verified-icon {
+  height: 13px;
+  width: 13px;
+  display: inline-block;
+  vertical-align: middle;
 }
